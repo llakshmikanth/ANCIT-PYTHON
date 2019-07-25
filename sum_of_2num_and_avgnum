@@ -1,0 +1,54 @@
+print("----------------------------SUMOFNUMBER-----------------------------------------------")
+I/P >> 1234
+O/P >> 16
+
+x = input("enter the number:")
+z = int(x)
+# print(sum(z))
+a = int(x[0])
+b = int(x[1])
+c = int(x[2])
+print(int(x[0]))
+print(int(x[1]))
+print(int(x[2]))
+print(a+b+c)
+
+
+print("using list-----------------------insert the value  if any value repeated inthis list that value will be remove")
+I/P >> input(user)==ex=a,b,c,d,a,b,a
+O/P >> a,b,c,d
+
+x = input("enter the num:")
+li = []
+
+for i in range(int(input("enter the starting range:")),int(input("enter the ending rangeL:"))):
+    z = input("insert the values of the list {} {}:")
+    if z not in li:
+        li.append(z)
+print(li)
+
+print("----------------------------SUMOFNUMBER-----------------------------------------------")
+I/P >> 1234
+O/P >> 16
+x = int(input("enter the number:"))
+z = 0
+while x>0:
+    val= x%10
+    z = z+val
+    x = x//10
+print(z)
+
+print("----------------------------SUMOFNUMBER and Average-----------------------------------------------")
+I/P >> 4
+O/P >> 2.5
+O/P >> 10
+print ("calculate an average of first n natural numbers")
+n = input("Enter Number ")
+n = int (n)
+average = 0
+sum = 0
+for num in range(0,n+1):
+    sum = sum+num
+average = sum / n
+print("Average of first ", n, "number is: ", average)
+print(sum)
